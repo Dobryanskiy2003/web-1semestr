@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(193, 255, 204);
+}
+
+.menu{
+    display: flex;
+    background-color: rgb(9, 205, 58);
+    justify-content: center;
+    padding: 10px;
+}
+
+.item{
+    color: white;
+    padding: 10px;
+    margin: 0px 20px;
+    border: 1px solid white;
+}
+
+a{
+    color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.foto{
+    margin: 30px;
+}
+
+.text{
+    margin: 30px;
+    color:  rgb(9, 205, 58);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.c1{
+    justify-self: center;
+}
+.c2{
+    align-self: center;
+}
+.c3{
+    align-self: center;
+}

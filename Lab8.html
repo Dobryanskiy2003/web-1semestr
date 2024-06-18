@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <style>
+         .highlight {
+             color: red;
+         }
+     </style>
+ </head>
+ <body>
+     <input type="text" id="employeeSearch" onkeyup="searchEmployee()" placeholder="Введите ФИО сотрудника...">
+     <button onclick="location.reload()">Кнопка</button>
+     <ul id="orgTree">
+         <li><span class="employee">Сотрудник 1</span>
+             <ul>
+                 <li><span class="employee">Сотрудник 1.1</span></li>
+                 <li><span class="employee">Сотрудник 1.2</span></li>
+             </ul>
+         </li>
+         <li><span class="employee">Сотрудник 2</span></li>
+         <li><span class="employee">Сотрудник 3</span></li>
+     </ul>
+ 
+     <script>
+         function searchEmployee() {
+             let input = document.getElementById('employeeSearch');
+             let filter = input.value.toUpperCase();
+             let ul = document.getElementById("orgTree");
+             let li = ul.getElementsByTagName('li');
+ 
+             for (let i = 0; i < li.length; i++) {
+                 let span = li[i].getElementsByTagName("span")[0];
+                 let txtValue = span.textContent || span.innerText;
+                 if (txtValue.toUpperCase().indexOf(filter) > -1 || filter === "СОТРУДНИК") {
+                     span.classList.add('highlight');
+                     li[i].style.display = "";
+                     let parent = li[i].parentNode.parentNode;
+                     while (parent && parent.id != 'orgTree') {
+                         parent.style.display = "";
+                         parent = parent.parentNode.parentNode;
+                     }
+                 } else {
+                     span.classList.remove('highlight');
+                     li[i].style.display = "none";
+                 }
+             }
+         }
+     </script>
+ </body>
+ </html>
+ 
