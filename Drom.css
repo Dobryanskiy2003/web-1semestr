@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(213, 232, 248);
+}
+
+.Home{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    padding: 10px;
+}
+
+.qwe{
+    padding: 10px;
+    margin: 0px 20px;
+    border: 1px solid white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.c1{
+    margin: 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+li{
+    padding: 10px;
+    border: 1px solid white;;
+    margin: 10px;
+    width: 190px;
+    background: blue;
+}
+
+a{
+    color: white;
+}

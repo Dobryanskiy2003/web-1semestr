@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Форма</title>
+        <link rel="stylesheet" href="Form.css">
+    </head>
+    <body>
+        <div class="Home">
+            <a class = "qwe" href="index.html">Вернуться назад</a>
+        </div>
+        <div class="container">
+            <form action="Form.html">
+                <fieldset>
+                    <legend>Введите данные:</legend>
+                    <br>
+                    <label for="qaz-choice">Ваше имя:</label>
+                    <input list="qaz" id="qaz-choice" name="qaz-choice" required/>
+
+                    <datalist id="qaz">
+                    <option value="Andrey"></option>
+                    <option value="Sergey"></option>
+                    <option value="Dima"></option>
+                    <option value="Maksim"></option>
+                    <option value="Denis"></option>
+                    </datalist>
+            
+                    <br>
+                    <br>
+            
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" placeholder="Введите email..." required/>
+            
+                    <br>
+                    <br>
+
+                    <label for="age">Возраст:</label>
+                    <input type="number" min="1" max="200" value="18" id="age" name="age"/>
+
+                    <br>
+                    <br>
+
+                    <label for="number">Оцените автомобиль LADA Priora </label>
+
+                    <select name="pets" id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+
+                    <br>
+                    <br>
+            
+                    <label for="text">Вашe сообщение:</label>
+                    <br>
+                    <textarea id="text" rows="4" cols="40"></textarea>
+
+                    <br>
+                    <br>
+
+                    <label for="text">Пример сообщения:</label>
+                    <br>
+                    <textarea id="text" rows="4" cols="40" disabled>LADA Priora нормальная машина, но продается по нереальным ценам !!!</textarea>
+            
+                    <br>
+                    <br>
+
+                    <label for="email">Поле администратора:</label>
+                    <input type="email" id="email" placeholder="Поле администратора..." readonly/>
+            
+                    <br>
+                    <br>
+
+                    <button>Связаться !</button>
+
+                    
+                
+                </fieldset>
+              </form>     
+    </body>
+</html>
